@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spades Tournament</title>
+</head>
+<body>
+    <div class="info">
+       <h1> <span style=color:#cce6ff;>CEDES JAY'S</span> <br>BIRTHDAY CELEBRATION </h1>
+       <h2> Cookout / Spades Tournament </h2>
+       <p>You are invited to help Cedes celebrate her birthday! If you know her,
+           you know she LOVES to play spades! So who think they can beat her? Who think
+           they're the Champs? Let's find out June 21! If you are
+           interested in this Spades Tournament, please sign up before June 20!
+           This is a 16-Team Tournament.
+           The entry fee is $50. Cashapp $CedessJ to secure your team spot!
+           Grab your partner and LET'S PLAY SPADES!</p>
+       <h3> Rules for Tournament </h3>
+       <p> Big Joker, Little Joker, Duece, Duece, Ace <br>
+           NO talking across the table (3 strikes, you're out) <br>
+           Single Elimination <br>
+           4 rounds </p>
+       <h3> Additional Information </h3>
+       <p>This is a cookout! You are welcomed to come without playing spades!
+           Spades outside the tournament will also be played!
+           There will be FOOD, DRINKS, GAMES, AND A LOT OF FUN!!<br>
+           </p>
+    </div>
+
+    <div class="container">
+      <h2>Sign Up Here!</h2>
+      <form onsubmit="emailSend(); reset(); return false;">
+       <p>LIMITED SPOTS </p>
+        <input type="text" id="teamName" placeholder="Team Name" name="teamName" required>
+        <input type="text" id="player1" placeholder="Member 1" name="player1" required>
+        <input type="text" id="player2" placeholder="Member 2" name="player2" required>
+        <input type="text" id="phone" placeholder="Phone" name="phone">
+        <button type="submit" class="btn">LET'S PLAY SPADES</button>
+       </form>
+     </div>
+
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <script src="spadesscript.js"></script>
+</body>
+
+<style>
+*{
+   box-sizing: border-box;
+   font-family: 'poppins', sans-serif;
+}
+body{
+   background-image: url("background.jpg");
+
+   margin: auto; 
+   padding-bottom: 50px;  
+}
+h1{
+  padding: 30px;
+  color: #339cff;
+}
+.info{
+   color: white;
+   padding: 150px;
+   text-align: center;
+}
+.container{
+   margin: auto;
+   padding: 20px;
+   width: 350px;
+   background-color: white;
+   border-radius: 5px;
+   text-align: center;
+}
+.container input{
+   width: 100%;
+   padding: 10px;
+   border: none;
+   border-bottom: 2px solid #777777;
+   margin-bottom: 20px;
+   font-size 16px;
+   outline: none;
+}
+.btn{
+   border: none !important;
+   cursor: pointer;
+   background-color: #99b3ff;
+   margin: 15px 0;
+   font-size: 16px;
+   width: 100%;
+   padding: 14px;
+}
+.btn:hover{
+   background-color: #3366ff;
+   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+ .info{
+   color: white;
+   padding: 50px;
+  }
+}
+
+
+</style>
+</html>
